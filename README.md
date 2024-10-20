@@ -2,7 +2,7 @@
 ## Google Colab使用教學（附帶MINST案例）
 ### Google Colab是什麼？
 Google Colab是Google免費提供的Jupyter筆電環境，支援CPU、GPU和NPU處理，提供諸如TensorFlow、pytorch、Kernal等主流深度學習框架的環境。該平台部署在雲端，不影響本地使用，因此再拉比再垃圾的電腦也依舊能夠正常使用。
-Colab官網：https://colab.research.google.com/
+<br>Colab官網：https://colab.research.google.com/
 
 #### 為什麼選擇該平台
 Google Colab為所有的開發者免費提供一定的GPU算力，每個人大約能分到一張特斯拉T4顯示卡的算力，該顯卡單精度浮點運算能力大約在2070與1080之間，同時擁有16G顯存，如果自己擁有更好的顯示卡（如用4090的富哥）那用自己的會更好。若自己電腦為3060的，雖然單精度浮點運算能力比T4強，但出於顯存考量以及自己筆電經常外帶的需求，筆者建議使用該平台會更好。
