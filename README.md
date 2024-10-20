@@ -21,5 +21,20 @@ Google Driver：https://drive.google.com/drive/
 首先進入Google Driver：https://drive.google.com/drive/
 ![image]()
 
+點選左上角的新建-更多
+![image]()
+
+這時候你已經可以看到Google Colaboratory，若沒有則點擊“關聯更多應用程式”，搜尋“Colab”，安裝第一個即可
+
+進入Colab
+
+若直接點選Colab的網址則為該頁面
+
+這時你只需要點擊左上角的文件-新筆記本便可以進到相同的頁面
+左邊有五個選項，分別為目錄、查找和替換、變量、Secret（秘鑰）、文件
+之後點擊代碼執行程序，然後點選更改運行時類型，在其中硬體加速器部分選擇GPU保存，Colab便會配置一個帶有GPU的機器，此時筆記本就創建完成了。
+
+### 雲端硬碟掛載由於我們的資料集以及程式碼檔案都放在了Google雲端碟上，因此還需要對Google雲端硬碟進行掛載在新建立的筆記本中輸入以下程式碼
+
 # 參考資料
 [Google Colab使用教學（附帶MINST案例）]([https://blog.csdn.net/dawnlini/article/details/128236315](https://blog.csdn.net/sggrafaf/article/details/136657651?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-12-136657651-blog-138222764.235%5ev43%5econtrol&spm=1001.2101.3001.4242.7&utm_relevant_index=15))
