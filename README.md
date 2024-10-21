@@ -140,7 +140,7 @@ print('Downloaded content "{}"'.format(downloaded.GetContentString()))
 以上這些檔案操作練習讓我們了解如何使用google drive，之後我們便可將數據資料上傳，以供機器學習使用。
 
 ### 初探機器學習
-如之前所述，使用Colab完全不需自行安裝TensorFlow等函式庫，直接import即可。現在我們到工具列File->New Python 3 notebook，產生一個新筆記本ML1.ipynb。接著在工具列Runtime -> Change Runtime Type，選擇VM Hardware accelerator。提供的選項有None(由google 配置)、GPU(圖形處理器) 及TPU(張量處理器Tensor Processing Unit)。其中TPU是專為Google的深度學習框架TensorFlow而設計的人工智慧加速器專用積體電路。參考官方文件得知，目前一個虛擬機可提供最長12小時免費使用。在此我們選擇TPU來執行機器學習範例。<br>
+如之前所述，使用Colab完全不需自行安裝TensorFlow等函式庫，直接import即可。現在我們到工具列File->New Python 3 notebook，產生一個新筆記本ML1.ipynb。接著在工具列Runtime -> Change Runtime Type，選擇VM Hardware accelerator。提供的選項有None(由google 配置)、GPU(圖形處理器) 及TPU(張量處理器Tensor Processing Unit)。其中TPU是專為Google的深度學習框架TensorFlow而設計的人工智慧加速器專用積體電路。參考[官方文件](https://research.google.com/colaboratory/faq.html#gpu-availability)得知，目前一個虛擬機可提供最長12小時免費使用。在此我們選擇TPU來執行機器學習範例。<br>
 ![image]()
 
 我們考慮下面這組數據集，其實可以很快得到這個關係式 Y = 3X + 1。
@@ -201,7 +201,7 @@ print(model.predict([10.0]))
 ```
 ![image]()
 
-結果並不是31，而是30.642574，非常接近31。為什麼呢？因為Neural Networks處理的是機率，在這個例子中只有6對數據，模型只能預測有很高的機率會是直線方程Y = 3X + 1，但不一定，所以機器學習將這個不確定性融入預測中。
+結果並不是31，而是30.642574，非常接近31。為什麼呢？因為Neural Networks處理的是**機率**，在這個例子中只有6對數據，模型只能預測有很高的機率會是直線方程Y = 3X + 1，但不一定，所以機器學習將這個不確定性融入預測中。
 
 本文從Google Colab環境開始介紹，文章後半段則跟大家一起初探Hello World等級的機器學習。撰文的主因是最近太常看到人工智慧及機器學習等相關新聞及討論，尤其在學完芬蘭的免費AI線上課程後，特別想了解如何寫程式應用或做相關研究。當我們發現Colab可方便使用Python及TensorFlow時，真心覺得應該推廣給每個人。
 
