@@ -54,6 +54,7 @@ plt.show()
 
 原來是x和y size必須相同。這是很容易修正的錯誤訊息，但是若一時看不出來問題在那兒呢？Colab在ValueError:下提供一個按鈕<br>
 `SEARCH STACK OVERFLOW`，方便我們查詢網站stack overflow的相關解答，非常實用。
+
 修改後就可畫出正確分布圖形了：
 
 
