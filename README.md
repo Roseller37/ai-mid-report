@@ -33,7 +33,7 @@ plt.show()
 ![image]()
 
 ### 版本比較Revision History
-點選工具列File -> Revision History，或直接於主工具列上按下All changes saved，有時會顯示Last saved at…(某時間點)。你會看到幾乎任何時間點的更動都被記錄下來，可以做檔案比較、選擇再次開啟歷史版本或復原版本。
+點選工具列File -> Revision History，或直接於主工具列上按下All changes saved，有時會顯示Last saved at…(某時間點)。你會看到幾乎任何時間點的更動都被記錄下來，可以做檔案比較、選擇再次開啟歷史版本或復原版本。<br>
 ![image]()
 
 ### 於notebook (副檔名.ipynb)中任意加入code cell或text cell
@@ -52,7 +52,7 @@ plt.show()
 得到錯誤訊息如下圖：
 ![image]()
 
-原來是x和y size必須相同。這是很容易修正的錯誤訊息，但是若一時看不出來問題在那兒呢？Colab在ValueError:下提供一個按鈕
+原來是x和y size必須相同。這是很容易修正的錯誤訊息，但是若一時看不出來問題在那兒呢？Colab在ValueError:下提供一個按鈕<br>
 `SEARCH STACK OVERFLOW`，方便我們查詢網站stack overflow的相關解答，非常實用。修改後就可畫出正確分布圖形了：
 
 
