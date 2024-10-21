@@ -6,9 +6,23 @@ Colab目的在提供Machine Learning機器學習教育訓練及研究用，不�
 
 ### Colab Notebook環境介紹
 開啟chrome先登入google帳號，連結URL https://colab.research.google.com/，出現對話窗如下，
-image
-按下右下角 NEW PYTHON 3 NOTEBOOK，出現如下的cell code區域。
+![image]()
 
+按下右下角 NEW PYTHON 3 NOTEBOOK，出現如下的cell code區域。
+![image]()
+
+點擊 code cell進入編輯模式並貼上這段python程式碼：
+
+```
+import numpy
+import matplotlib.pyplot as plt
+
+x = numpy.random.normal(5.0, 1.0, 100000)
+
+plt.hist(x, 100)
+plt.show()
+```
+按下左側執行button 或CTRL+Enter。會看到正態分布直方圖結果如下：
 
 # 參考資料
 [Google Colaboratory–適合Python初學者的雲端開發環境](https://www.cc.ntu.edu.tw/chinese/epaper/0052/20200320_5207.html)
