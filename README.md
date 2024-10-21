@@ -11,7 +11,7 @@ Colab目的在提供Machine Learning機器學習教育訓練及研究用，不�
 按下右下角 NEW PYTHON 3 NOTEBOOK，出現如下的cell code區域。<br>
 ![image]()
 
-點擊 code cell進入編輯模式並貼上這段python程式碼：<br>
+點擊 code cell進入編輯模式並貼上這段python程式碼：
 
 ```
 import numpy
@@ -22,6 +22,7 @@ x = numpy.random.normal(5.0, 1.0, 100000)
 plt.hist(x, 100)
 plt.show()
 ```
+
 按下左側執行button 或CTRL+Enter。會看到正態分布直方圖結果如下：<br>
 ![image]()
 
@@ -40,15 +41,19 @@ plt.show()
 ![image]()
 
 接下來編輯執行第二個cell code，程式碼如下：
+
 ```
 y = numpy.random.normal(10.0, 2.0, 1000)
 
 plt.scatter(x, y)
 plt.show()
 ```
+
 得到錯誤訊息如下圖：
+![image]()
 
-
+原來是x和y size必須相同。這是很容易修正的錯誤訊息，但是若一時看不出來問題在那兒呢？Colab在ValueError:下提供一個按鈕
+`SEARCH STACK OVERFLOW`，方便我們查詢網站stack overflow的相關解答，非常實用。修改後就可畫出正確分布圖形了：
 
 
 
