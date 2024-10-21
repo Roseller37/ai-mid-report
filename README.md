@@ -49,16 +49,103 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-得到錯誤訊息如下圖：
+得到錯誤訊息如下圖：<br>
 ![image]()
 
 原來是x和y size必須相同。這是很容易修正的錯誤訊息，但是若一時看不出來問題在那兒呢？Colab在ValueError:下提供一個按鈕<br>
 `SEARCH STACK OVERFLOW`，方便我們查詢網站stack overflow的相關解答，非常實用。
 
-修改後就可畫出正確分布圖形了：
+修改後就可畫出正確分布圖形了：<br>
+![image]()
 
+每一個code cell右上角都具有簡易工具列如下圖，最右邊的More cell actions中有Clear output功能，可快速清理output視窗。<br>
+![image]()
 
+### Mounting Google Drive in your VM
+展開Colab notebook左邊的區域，google提供很多方便的Code snippets範例程式碼，我們挑選存取google雲端硬碟的範例實作。<br>
+![image]()
 
+首先要mount上google drive，程式碼如下。
+這裡的設定需要綁定權限，請按照指示，連上google oauth2 URL後認證，並複製貼上你的authorization code。<br>
+![image]()
+
+```
+from google.colab import drive
+drive.mount('/gdrive')
+```
+
+當輸入驗證完成，會顯示Mounted at /gdrive，這就表示成功了。<br>
+![image]()
+
+接著在”我的雲端硬碟”中新增檔案foo.txt，並列印出內容。程式碼及執行結果如下：
+
+```
+with open('/gdrive/My Drive/foo.txt', 'w') as f:
+  f.write('您好 Google Drive!')
+!cat '/gdrive/My Drive/foo.txt'
+```
+![image]()
+
+但我們其實應該到綁定google帳號的雲端硬碟去檢查，檔案是否真的寫入內容了。<br>
+![image]()
+
+針對google drive的存取，也可以利用python的PyDrive函式庫簡化對Google Drive API的使用，相關範例如下：
+
+```
+# Import PyDrive and associated libraries.
+# This only needs to be done once in a notebook.
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+from google.colab import auth
+from oauth2client.client import GoogleCredentials
+
+# Authenticate and create the PyDrive client.
+# This only needs to be done once in a notebook.
+auth.authenticate_user()
+gauth = GoogleAuth()
+gauth.credentials = GoogleCredentials.get_application_default()
+drive = GoogleDrive(gauth)
+
+# Create & upload a text file.
+uploaded = drive.CreateFile({'title': 'PyDriveSample.txt'})
+uploaded.SetContentString('Sample upload file content 範例')
+uploaded.Upload()
+print('Uploaded file with ID {}'.format(uploaded.get('id')))
+```
+
+因為會使用Google Cloud SDK，故執行時也會需要輸入驗證碼，此範例會傳回file ID供後續使用。
+接下來測試列出.txt檔案，因為在同一本notebook，上面的函式庫及參數可以直接應用：
+
+```
+# List .txt files in the root.
+# Search query reference:
+# https://developers.google.com/drive/v2/web/search-parameters
+listed = drive.ListFile({'q': "title contains '.txt' and 'root' in parents"}).GetList()
+for file in listed:
+  print('title {}, date {}, id {}'.format(file['title'], file['createdDate'], file['id']))
+```
+![image]()
+
+接下來測試下載特定檔案：
+
+```
+# Download a file based on its file ID.
+# A file ID looks like: laggVyWshwcyP6kEI-y_W3P8D26sz
+file_id = '填入你自己的file ID'
+downloaded = drive.CreateFile({'id': file_id})
+print('Downloaded content "{}"'.format(downloaded.GetContentString()))
+```
+![image]()
+
+以上這些檔案操作練習讓我們了解如何使用google drive，之後我們便可將數據資料上傳，以供機器學習使用。
+
+### 初探機器學習
+如之前所述，使用Colab完全不需自行安裝TensorFlow等函式庫，直接import即可。現在我們到工具列File->New Python 3 notebook，產生一個新筆記本ML1.ipynb。接著在工具列Runtime -> Change Runtime Type，選擇VM Hardware accelerator。提供的選項有None(由google 配置)、GPU(圖形處理器) 及TPU(張量處理器Tensor Processing Unit)。其中TPU是專為Google的深度學習框架TensorFlow而設計的人工智慧加速器專用積體電路。參考官方文件得知，目前一個虛擬機可提供最長12小時免費使用。在此我們選擇TPU來執行機器學習範例。<br>
+![image]()
+
+我們考慮下面這組數據集，其實可以很快得到這個關係式 Y = 3X + 1。
+> X:  -1  0  1  2  3   4
+> Y:  -2  1  4  7  10  13
 
 
 
