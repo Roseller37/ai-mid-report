@@ -144,7 +144,7 @@ print('Downloaded content "{}"'.format(downloaded.GetContentString()))
 ![image]()
 
 我們考慮下面這組數據集，其實可以很快得到這個關係式 Y = 3X + 1。
-> X:  -1  0  1  2  3   &ensp; 4 <br>
+> X:  -1  0  1  2  3&ensp; 4 <br>
 > Y:  -2  1  4  7  10  13
 
 
