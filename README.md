@@ -11,9 +11,8 @@ Colab目的在提供Machine Learning機器學習教育訓練及研究用，不�
 按下右下角 NEW PYTHON 3 NOTEBOOK，出現如下的cell code區域。<br>
 ![image]()
 
-點擊 code cell進入編輯模式並貼上這段python程式碼：
+點擊 code cell進入編輯模式並貼上這段python程式碼：<br>
 
-<br>
 ```
 import numpy
 import matplotlib.pyplot as plt
