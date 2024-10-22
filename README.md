@@ -9,7 +9,7 @@ Colab目的在提供Machine Learning機器學習教育訓練及研究用，不�
 ![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_1%202024-10-23%20.png)
 
 按下右下角 NEW PYTHON 3 NOTEBOOK，出現如下的cell code區域。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_2%202024-10-23%20.png)
 
 點擊 code cell進入編輯模式並貼上這段python程式碼：
 
