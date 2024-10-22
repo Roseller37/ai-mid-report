@@ -24,7 +24,7 @@ plt.show()
 ```
 
 按下左側執行button 或CTRL+Enter。會看到正態分布直方圖結果如下：<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_3%202024-10-23%20.png)
 
 對了，Colab有code IntelliSense功能，以上述範例來說，在前面兩行import完numpy等函式庫後，請先按下執行。接著再寫 x= numpy.random.n…編輯器會自動顯示代碼完成，參數信息，快速信息和成員列表等功能，十分方便，如下圖。<br>
 ![image]()
