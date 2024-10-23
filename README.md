@@ -30,7 +30,7 @@ plt.show()
 ![image]()
 
 將滑鼠移至code cell右上角RAM/Disk區域時，可以顯示本次執行虛擬機所分配的資源：約12GB RAM，100GB Disk，如下圖。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_4%202024-10-24%20.png)
 
 ### 版本比較Revision History
 點選工具列File -> Revision History，或直接於主工具列上按下All changes saved，有時會顯示Last saved at…(某時間點)。你會看到幾乎任何時間點的更動都被記錄下來，可以做檔案比較、選擇再次開啟歷史版本或復原版本。<br>
