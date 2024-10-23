@@ -5,7 +5,7 @@ Colaboratory (以下簡稱Colab)是一個在雲端運行的編輯執行環境，
 Colab目的在提供Machine Learning機器學習教育訓練及研究用，不須下載、不須安裝就可直接應用Python 2.7 與 Python 3.6資源庫，對初學者來說可以快速入門，不需耗時間在環境設定上。程式碼預設會直接儲存在開發者的Google Drive雲端硬碟中，執行時由虛擬機提供強大的運算能力，不會用到本機的資源。但要注意在閒置一段時間後，虛擬機會被停止並回收運算資源，此時只需再重新連接即可。接下來我們就來看操作環境：
 
 ### Colab Notebook環境介紹
-開啟chrome先登入google帳號，連結URL https://colab.research.google.com，出現對話窗如下，<br>
+開啟chrome先登入google帳號，連結URL https://colab.research.google.com/ ，出現對話窗如下，<br>
 ![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_1%202024-10-23%20.png)
 
 按下右下角 NEW PYTHON 3 NOTEBOOK，出現如下的cell code區域。<br>
