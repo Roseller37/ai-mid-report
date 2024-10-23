@@ -57,7 +57,7 @@ plt.show()
 `SEARCH STACK OVERFLOW`，方便我們查詢網站stack overflow的相關解答，非常實用。
 
 修改後就可畫出正確分布圖形了：<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_10%202024-10-24%20.png)
 
 每一個code cell右上角都具有簡易工具列如下圖，最右邊的More cell actions中有Clear output功能，可快速清理output視窗。<br>
 ![image]()
