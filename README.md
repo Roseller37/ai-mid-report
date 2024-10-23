@@ -34,7 +34,7 @@ plt.show()
 
 ### 版本比較Revision History
 點選工具列File -> Revision History，或直接於主工具列上按下All changes saved，有時會顯示Last saved at…(某時間點)。你會看到幾乎任何時間點的更動都被記錄下來，可以做檔案比較、選擇再次開啟歷史版本或復原版本。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_7%202024-10-24%20.png)
 ![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_6%202024-10-24%20.png)
 
 ### 於notebook (副檔名.ipynb)中任意加入code cell或text cell
