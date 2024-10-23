@@ -60,7 +60,7 @@ plt.show()
 ![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_10%202024-10-24%20.png)
 
 每一個code cell右上角都具有簡易工具列如下圖，最右邊的More cell actions中有Clear output功能，可快速清理output視窗。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_11%202024-10-24%20.png)
 
 ### Mounting Google Drive in your VM
 展開Colab notebook左邊的區域，google提供很多方便的Code snippets範例程式碼，我們挑選存取google雲端硬碟的範例實作。<br>
