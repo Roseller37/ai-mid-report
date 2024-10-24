@@ -27,7 +27,7 @@ plt.show()
 ![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_3%202024-10-23%20.png)
 
 對了，Colab有code IntelliSense功能，以上述範例來說，在前面兩行import完numpy等函式庫後，請先按下執行。接著再寫 x= numpy.random.n…編輯器會自動顯示代碼完成，參數信息，快速信息和成員列表等功能，十分方便，如下圖。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_12%202024-10-24.jpg?raw=true)
 
 將滑鼠移至code cell右上角RAM/Disk區域時，可以顯示本次執行虛擬機所分配的資源：約12GB RAM，100GB Disk，如下圖。<br>
 ![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_4%202024-10-24%20.png)
