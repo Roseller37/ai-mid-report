@@ -64,11 +64,11 @@ plt.show()
 
 ### Mounting Google Drive in your VM
 展開Colab notebook左邊的區域，google提供很多方便的Code snippets範例程式碼，我們挑選存取google雲端硬碟的範例實作。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_13%202024-10-27%20.png)
 
 首先要mount上google drive，程式碼如下。
 這裡的設定需要綁定權限，請按照指示，連上google oauth2 URL後認證，並複製貼上你的authorization code。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_12%202024-10-27%20.png?raw=true)
 
 ```
 from google.colab import drive
@@ -76,7 +76,7 @@ drive.mount('/gdrive')
 ```
 
 當輸入驗證完成，會顯示Mounted at /gdrive，這就表示成功了。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_14%202024-10-27%20.png?raw=true)
 
 接著在”我的雲端硬碟”中新增檔案foo.txt，並列印出內容。程式碼及執行結果如下：
 
@@ -85,10 +85,10 @@ with open('/gdrive/My Drive/foo.txt', 'w') as f:
   f.write('您好 Google Drive!')
 !cat '/gdrive/My Drive/foo.txt'
 ```
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_15%202024-10-27%20.png?raw=true)
 
 但我們其實應該到綁定google帳號的雲端硬碟去檢查，檔案是否真的寫入內容了。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_16%202024-10-27%20.png?raw=true)
 
 針對google drive的存取，也可以利用python的PyDrive函式庫簡化對Google Drive API的使用，相關範例如下：
 
@@ -125,7 +125,7 @@ listed = drive.ListFile({'q': "title contains '.txt' and 'root' in parents"}).Ge
 for file in listed:
   print('title {}, date {}, id {}'.format(file['title'], file['createdDate'], file['id']))
 ```
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_17%202024-10-27%20.png?raw=true)
 
 接下來測試下載特定檔案：
 
@@ -136,7 +136,7 @@ file_id = '填入你自己的file ID'
 downloaded = drive.CreateFile({'id': file_id})
 print('Downloaded content "{}"'.format(downloaded.GetContentString()))
 ```
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_18%202024-10-27%20.png?raw=true)
 
 以上這些檔案操作練習讓我們了解如何使用google drive，之後我們便可將數據資料上傳，以供機器學習使用。
 
@@ -174,7 +174,7 @@ model.fit(xs, ys, epochs=100)
 ```
 
 可以看到輸出結果Train on 6 samples及隨著次數增多，越來越低的loss value。到訓練結束時，loss非常小約等於0.0150，表明我們的模型在推斷數字之間的關係方面做得很好。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_20%202024-10-27%20.png?raw=true)
 
 到此我們先暫停一下，畫張圖：利用線性回歸使用數據點之間的關係，在所有數據點之間畫一條直線。這條線可以用來預測未來值。程式碼如下：
 
@@ -193,7 +193,7 @@ plt.show()
 ```
 
 ### 執行輸出結果如下圖：<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_21%202024-10-27%20.png?raw=true)
 
 若X=10.0，我們應該很快就認為Y的值是31，那麼來看看經過學習後機器預測的結果吧。
 
