@@ -198,7 +198,8 @@ plt.show()
 若X=10.0，我們應該很快就認為Y的值是31，那麼來看看經過學習後機器預測的結果吧。
 
 ```
-print(model.predict([10.0]))
+prediction = model.predict(np.array([[10.0]]))
+print(prediction)
 ```
 ![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_23%202024-10-31.png)
 
