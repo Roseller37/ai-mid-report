@@ -142,7 +142,7 @@ print('Downloaded content "{}"'.format(downloaded.GetContentString()))
 
 ### 初探機器學習
 如之前所述，使用Colab完全不需自行安裝TensorFlow等函式庫，直接import即可。現在我們到工具列File->New Python 3 notebook，產生一個新筆記本ML1.ipynb。接著在工具列Runtime -> Change Runtime Type，選擇VM Hardware accelerator。提供的選項有None(由google 配置)、GPU(圖形處理器) 及TPU(張量處理器Tensor Processing Unit)。其中TPU是專為Google的深度學習框架TensorFlow而設計的人工智慧加速器專用積體電路。參考[官方文件](https://research.google.com/colaboratory/faq.html#gpu-availability)得知，目前一個虛擬機可提供最長12小時免費使用。在此我們選擇TPU來執行機器學習範例。<br>
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_22%202024-10-31.png)
 
 我們考慮下面這組數據集，其實可以很快得到這個關係式 Y = 3X + 1。
 > X:  -1  0  1  2  3&ensp; 4 <br>
