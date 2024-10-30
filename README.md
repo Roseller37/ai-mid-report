@@ -200,7 +200,7 @@ plt.show()
 ```
 print(model.predict([10.0]))
 ```
-![image]()
+![image](https://github.com/Roseller37/ai-mid-report/blob/main/image/ai_%20Example_23%202024-10-31.png)
 
 結果並不是31，而是30.642574，非常接近31。為什麼呢？因為Neural Networks處理的是**機率**，在這個例子中只有6對數據，模型只能預測有很高的機率會是直線方程Y = 3X + 1，但不一定，所以機器學習將這個不確定性融入預測中。
 
